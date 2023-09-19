@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(224, 224, 224);
+    margin: 0;
+    height: 800px;
+}
+.banner {
+    width: 100%;
+    height: 55px;
+    background-color: rgb(0, 0, 0);
+    padding-top: 28px;
+    position: fixed;
+}
+
+a  {
+    color:rgb(255, 255, 255);
+    margin-left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    float: left;
+}
+.banner a:hover {
+        background: rgb(0, 0, 0);
+        color: skyblue;
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 2100px;
+    
+}
+.HEABSTORE {
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    height: 155%;
+    float: left;
+    margin-top: -30px;
+}
+.HEABSTORE p {
+    margin-left: 40px;
+    font-size: 60px;
+    margin-top: 8px;
+    color: rgb(255, 255, 255);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.HEABSTORE P:hover {
+    background: rgb(0, 0, 0);
+    color: skyblue;
+}
+.footer {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 150px;
+    float: left;
+}
+.backvideo {
+    background-color: rgb(255, 255, 255);
+    width: 260px;
+    height: 48%;
+    float: left;
+    margin-top: 15px;
+    margin-left: 35px;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px rgb(188, 188, 188);
+}
+.chinesemovie {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 650px;
+    float: left;
+    margin-top: 6%;
+}
+.chinesemovie img {
+    width: 100%;
+    height: 85%;
+    border-radius: 1rem;
+}
+.chinesemovie span {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-left: 10px;
+    font-family: 'Noto Sans Khmer', sans-serif;
+}
+.socialmedia {
+    background-color: rgb(0, 0, 0);
+    width: 30%;
+    height: 80%;
+    margin-left: 550px;
+    float: left;
+    margin-top: 20px;
+}
+.socialmedia a {
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top:30px;
+    float: left;
+}
+.socialmedia a:hover {
+    color: rgb(0, 115, 255);
+    background-color: black;
+}
+.Search {
+    float: left;
+    
+}
+.Search input {
+    margin-left: 20px;
+    width: 250px;
+    height: 30px;
+    margin-top: -10px;
+}
+/* Login Style */

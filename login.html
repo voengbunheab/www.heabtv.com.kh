@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Login Page.</title>
+<link rel="stylesheet" href="STYLE/login.css"/>
+</head>
+<body>
+  <div class="login-box">
+    <center>
+      <h2 class="login">Login Account</h2>
+    </center>
+    <form id="form_id" method="post" name="myform">
+      <div class="user-box">
+        <input type="text" name="username" id="username" required="">
+        <label>Username</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="password" id="password" required="">
+        <label>Password</label>
+      </div>
+      <center>
+      <a href="#">
+        <input type="button" value="LOGIN" id="submit" onclick="validate()"/>
+         <span></span>
+      </a>
+    </center>
+    </form>
+  </div>
+       <script>
+        var attempt = 3; // Variable to count number of attempts.
+              // Below function Executes on click of login button.
+              function validate()
+          {
+              var username = document.getElementById("username").value;
+              var password = document.getElementById("password").value;
+              if ( username == "heab" && password == "heab123")
+              {
+                    alert ("Login successfully");
+                    window.location = "home.html"; // Redirecting to other page.
+                    return false;
+              }
+                   if ( username == 'heab') 
+              {
+                     alert ("Please input  your password.");
+              }
+                      else
+              {
+                      attempt --;// Decrementing by one.
+                      alert("Please Input "+ attempt +" Username.");
+                      // Disabling fields after 3 attempts.
+                      if( attempt == 0)
+                 {
+                    document.getElementById("username").disabled = true;
+                    document.getElementById("password").disabled = true;
+                    document.getElementById("submit").disabled = true;
+                    return false;
+                 }
+              }
+          }
+       </script>
+</body>
+</html>
